@@ -1,16 +1,30 @@
-Easy:-
+SNR EZ
 https://www.codingninjas.com/codestudio/problems/encode-the-message_699836
 
-Easy BS:-
+SNR EZ
 https://www.codingninjas.com/codestudio/problems/square-root-integral_893351
 
-Mod Reccur:-
+SNR MOD
 https://www.codingninjas.com/codestudio/problems/print-all-subsets_2041995
 
-
-dp:-   (mod)
-
+SNR MOD
 https://www.codingninjas.com/codestudio/problems/0-1-knapsack_920542
 
+SNR HRD
 https://www.codingninjas.com/codestudio/problems/longest-increasing-subsequence_630459
 
+
+JNR EZ
+https://www.codingninjas.com/codestudio/problems/swap-two-numbers_1112577
+
+JNR EZ
+https://www.codingninjas.com/codestudio/problems/reverse-words_696444
+
+JNR MOD
+https://www.codingninjas.com/codestudio/problems/first-and-last-position-of-an-element-in-sorted-array_839724
+
+JNR MOD
+https://www.codingninjas.com/codestudio/problems/yogesh-and-primes_16331
+
+JNR HRD
+https://www.codingninjas.com/codestudio/problems/rotated-array_1093219
