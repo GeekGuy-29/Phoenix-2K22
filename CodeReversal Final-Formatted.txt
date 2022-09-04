@@ -1,0 +1,603 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+					
+
+Q.1 Title:- Sn Value
+
+Colab Notebook Link:- https://colab.research.google.com/drive/11mHcdkTOkEhib-sdWBOhdnyYnan3U8Mt?usp=sharing
+
+Input Format :-
+
+1. The first line contains one integer t (1<=t<=1000) - the number of test cases. Then follow the descriptions of each test case.
+
+2. The first line of each test case contains a single integer n (1<=n<=1000).
+
+
+Solution Code:- 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long int ll;
+typedef long double lld;
+const ll mod = 1e9+7;
+
+#define endl "\n"
+#define read(a) for(auto &i:a) cin>>i
+#define print(a) for(auto &i:a) cout<<i<<" ";cout<<endl
+
+int main(){
+    int tt; 
+    cin>>tt;
+    while(tt--){
+        int n; cin>>n;
+        int ans = n*(n+1)/2;
+        cout<<ans<<endl;
+    }
+}
+
+(Hidden Test Cases)
+
+Test Case:-
+
+Test Case 1:-
+
+Input:-
+
+4
+1
+2
+3
+4
+
+Output:-
+
+1
+3
+6
+10
+
+Test Case 2:-
+
+Input:-
+
+3
+10
+100
+1000
+
+Output:-
+
+55
+5050
+500500
+
+Test Case 3:-
+
+Input:- 
+
+3
+22345
+10723
+33456
+
+Output:- 
+
+249660685
+57496726
+559668696
+
+Test Case 4:-
+
+Input:- 
+
+4
+35
+22
+99
+78
+
+Output:-
+
+630
+253
+4950
+3081
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.2 Title:- Spiral Traversal
+
+Colab Notebook Link:- https://colab.research.google.com/drive/1QXryBal8Zcoi7cegkdgUblTaAtfpV513?usp=sharing
+
+Input Format:-
+
+1. The first line contains one integers n (0<n<101, n.n<10001) - number of rows and columns in the table.
+
+2. Each of next n lines describes a row of the table. The i-th line contains n integers.
+
+Solution Code:-
+
+#include <bits/stdc++.h>
+using namespace std;
+int n,m; 
+int arr[100][100];
+
+void spiral(int st, int n, int m){
+    if(st==n || st==m) return;
+    if(st+1==n){
+        for(int i=m-1; i>=st; i--) cout<<arr[st][i]<<" ";
+        return;
+    }
+    if(st+1==m){
+        for(int i=n-1; i>=st; i--) cout<<arr[i][st]<<" ";
+        return;
+    }
+
+    for(int i=n-1; i>=st; i--) cout<<arr[i][m-1]<<" ";
+    for(int i = m-2; i>=st+1; i--) cout<<arr[st][i]<<" ";
+    for(int i=st; i<=n-1; i++) cout<<arr[i][st]<<" ";
+    for(int i=st+1; i<m-1; i++) cout<<arr[n-1][i]<<" ";
+    spiral(st+1,n-1,m-1);
+
+}
+
+
+int main(){
+    cin>>n;
+    m = n;
+
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            cin>>arr[i][j];
+        }
+    }
+
+    spiral(0,n,m);
+} 
+
+
+(Hidden Test Cases)
+
+TestCase 1:-
+
+Input:-
+
+4
+18 28 98 90
+23 45 67 87
+23 45 76 98
+34 65 87 90
+
+Output:-
+
+90 98 87 90 98 28 18 23 23 34 65 87 76 67 45 45
+
+TestCase 2:-
+
+Input:-
+
+3
+1 2 3
+4 5 6
+7 8 9
+
+Output:-
+
+9 6 3 2 1 4 7 8 5
+
+Test Case 3:-
+
+Input:-
+
+5
+
+11 22 33 44 55
+66 77 88 99 111
+10 20 30 40 50
+60 70 80 90 100
+21 22 23 24 25
+
+Output:-
+
+25 100 50 111 55 44 33 22 11 66 10 60 21 22 23 24 90 40 99 88 77 20 70 80 30
+
+Test Case 4:- 
+
+Input:-
+
+6
+1 2 3 4 5 6 
+7 8 9 10 11 12
+13 14 15 16 17 18
+19 20 21 22 23 24
+25 26 27 28 29 30
+31 32 33 34 35 36
+
+Output:-
+
+36 30 24 18 12 6 5 4 3 2 1 7 13 19 25 31 32 33 34 35 29 23 17 11 10 9 8 14 20 26 27 28 22 16 15 21
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.3 Title:- Turn the table
+
+Colab Notebook Link:- https://colab.research.google.com/drive/1C_XVBGcJhciIUdRylOiRc2IdtCNeK3jv?usp=sharing
+
+
+Input Format :-
+
+The first line contains one integer t (1<=t<=1000) - the number of test cases. Then follow the descriptions of each test case.
+
+The first line of each test case contains a single integer n (1<=n<=10000).
+
+
+Solution Code:- 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long int ll;
+typedef long double lld;
+const ll mod = 1e9+7;
+
+#define endl "\n"
+#define read(a) for(auto &i:a) cin>>i
+#define print(a) for(auto &i:a) cout<<i<<" ";cout<<endl
+
+int main(){
+    int tt; 
+    cin>>tt;
+    while(tt--){
+        int arr[7];
+
+        arr[0] = 465;
+        arr[1] = 324;
+        arr[2] = 232;
+        arr[3] = 243;
+        arr[4] = 23;
+        arr[5] = 1;
+        arr[6] = 0; 
+
+        int n; cin>>n;
+        n %=7;
+        cout<<arr[n]<<endl;
+    }
+}
+
+
+(Hidden Test Cases)
+
+TestCase 1:-
+
+Input:-
+
+5
+23
+45
+7
+14
+4
+
+Output:-
+
+232
+243
+465
+465
+23
+
+TestCase 2:-
+
+Input:-
+
+2
+2423
+234
+
+Output:-
+
+324
+243
+
+Test Case 3:- 
+
+Input:-
+
+5
+11
+22
+33
+44
+55
+
+Output:-
+
+23
+324
+1
+232
+0
+
+TestCase 4:-
+
+Input:-
+
+10
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+
+
+Output:-
+
+243
+0
+232
+1
+324
+23
+465
+243
+0
+232
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.4 Title:- Prime and query
+
+Colab Notebook Link:- https://colab.research.google.com/drive/18C4hHvlfwPFWvPnBVN53PufOblwluzTh?usp=sharing
+
+Input Format:-
+
+The first line contains one integer t (1<=t<=1000) - the number of test cases. Then follow the descriptions of each test case.
+
+The first line of each test case contains a single integer n (1<=n<=400).
+
+
+Solution Code:-
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long int ll;
+typedef long double lld;
+const ll mod = 1e9+7;
+
+#define endl "\n"
+#define read(a) for(auto &i:a) cin>>i
+#define print(a) for(auto &i:a) cout<<i<<" ";cout<<endl
+
+string primes ="";
+
+void makePrimes(string &s){
+
+    for(int i=2; i<1000; i++){
+        int sw = 1;
+        for(int j=2; j<i; j++){
+            if(i%j==0){
+                sw = 0;
+                break;
+            }
+        }
+        auto p = to_string(i);
+        if(sw) s+=p;
+    }
+}
+
+int main(){
+    makePrimes(primes);
+    // cout<<primes<<endl;
+    // cout<<primes.size()<<endl;
+
+    int tt; 
+    cin>>tt;
+    while(tt--){
+        int n; cin>>n;
+        cout<<primes[n]<<endl; 
+    }
+}
+
+
+(Hidden Test Case)
+
+TestCase 1:-
+
+Input:-
+
+3
+0
+1
+2
+
+Output:-
+
+2
+3
+5
+
+TestCase 2:-
+
+Input:-
+
+3
+105
+150
+200
+
+Output:-
+
+7
+1
+8
+
+TestCase 3:-
+
+Input:-
+
+3
+23
+45 
+66
+
+Output:-
+
+3
+7
+1
+
+TestCase 4:-
+
+Input:-
+
+3
+99 
+89
+79
+
+Output:-
+
+1
+7
+1
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.5 Distinct String:-
+
+Colab Notebook Link:- https://colab.research.google.com/drive/1C_ChIzk2yg9C02-jl0nVKQRbWr0rIsh1?usp=sharing
+
+
+Input Format:-
+
+The first line contains one integer t (1<=t<=1000) - the number of test cases. Then follow the descriptions of each test case.
+
+The first line of each test case contains a single String with no spaces and max length 1000.
+
+
+Solution Code:-
+
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long int ll;
+typedef long double lld;
+const ll mod = 1e9+7;
+
+#define endl "\n"
+#define read(a) for(auto &i:a) cin>>i
+#define print(a) for(auto &i:a) cout<<i<<" ";cout<<endl
+
+void solve(){
+    string s;cin>>s;
+    string ans=""; 
+    int n=s.size();
+
+    for(int i = 0; i<n ; i++ ){
+        if( (s[i]=='a' || s[i]=='A') || 
+            (s[i]=='e' || s[i]=='E') ||  
+            (s[i]=='i' || s[i]=='I') || 
+            (s[i]=='o' || s[i]=='O') || 
+            (s[i]=='u' || s[i]=='U')
+        ){
+
+            ans += s[i];
+        }
+    }
+    cout<<ans<<endl;
+}
+
+int main(){
+    int tt; 
+    cin>>tt;
+    while(tt--){
+        solve();
+    }
+}
+
+(Hidden Test Cases)
+
+TestCase 1:-
+
+Input:-
+
+3
+PhoeniX
+PhoenixPhoeniX
+PhoenixPhoenixPhoeniX
+
+Output:-
+
+oei
+oeioei
+oeioeioei
+
+TestCase 2:-
+
+Input:-
+
+4
+AeIoU
+aeiou
+AEIOU
+abcdef
+
+Output:-
+
+AeIoU
+aeiou
+AEIOU
+ae
+
+TestCase 3 :-
+
+Input:-
+
+4
+Mother
+Father 
+Daughter
+Son
+
+Output:-
+
+oe
+ae
+aue
+o
+
+TestCase 4:-
+
+Input:-
+
+6
+Tom
+Jerry
+Harry
+Oswald
+John
+Ramesh
+
+Output:-
+
+o
+e
+a
+Oa
+o
+ae
+------------------------------------------------------------------------------------------------------------------

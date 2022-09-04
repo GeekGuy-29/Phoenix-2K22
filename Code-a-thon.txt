@@ -1,0 +1,16 @@
+Easy:-
+https://www.codingninjas.com/codestudio/problems/encode-the-message_699836
+
+Easy BS:-
+https://www.codingninjas.com/codestudio/problems/square-root-integral_893351
+
+Mod Reccur:-
+https://www.codingninjas.com/codestudio/problems/print-all-subsets_2041995
+
+
+dp:-   (mod)
+
+https://www.codingninjas.com/codestudio/problems/0-1-knapsack_920542
+
+https://www.codingninjas.com/codestudio/problems/longest-increasing-subsequence_630459
+

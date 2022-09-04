@@ -1,0 +1,30 @@
+JNR EASY1
+https://www.codingninjas.com/codestudio/problems/sum-or-product_920478
+
+JNR EASY2
+https://www.codingninjas.com/codestudio/problems/sum-of-even-numbers-till-n_893205
+
+JNR MOD1
+https://www.codingninjas.com/codestudio/problems/day-of-the-week_668910
+
+JNR MOD2
+https://www.codingninjas.com/codestudio/problems/integer-to-roman-numeral_981307
+
+JNR HARD
+https://www.codingninjas.com/codestudio/problems/stocks-are-profitable_893405
+
+
+SNR EZ
+https://www.codingninjas.com/codestudio/problems/inplace-rotate-matrix-90-degree_839734
+
+SNR MOD
+https://www.codingninjas.com/codestudio/problems/integer-to-roman-numeral_981307
+
+SNR MOD
+https://www.codingninjas.com/codestudio/problems/next-greater-element_799354
+
+SNR MOD
+https://www.codingninjas.com/codestudio/problems/next-permutaion_893046
+
+SNR HRD
+https://www.codingninjas.com/codestudio/problems/maximum-points-on-straight-line_1092972
